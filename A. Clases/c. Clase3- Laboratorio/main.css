@@ -1,0 +1,53 @@
+html {
+    background: #e6e9e9;
+    -webkit-font-smoothing: antialiased;
+}
+
+.titulo_principal{
+	color: #00FF;
+	font-size: 40px;
+	font-family: Cabin,
+	Arial, tahoma, Georgia, sans-serif;
+}
+
+.titulo_final{
+    color: #F44336;
+    text-align: center;
+    line-height: 6;
+    
+}
+
+body {
+    background: #e6e9e9;
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width:800px;
+    padding: 5em 3em 3em 4em;
+}
+
+h1 {
+    text-align: center;
+    line-height: 1.5;
+    
+}
+
+h2{
+    color: #0C870E;
+    font-weight: 600;
+    line-height: 1.3;
+}
+nav{
+    text-align: center;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+p {
+    max-width:650px;
+    
+}

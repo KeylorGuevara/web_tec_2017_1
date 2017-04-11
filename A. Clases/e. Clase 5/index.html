@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="utf-8">
+        <link href="estilo_formulario.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <nav></nav>
+        </header>
+        <aside>
+            <nav></nav>
+        </aside>
+        <section>
+            <h1>Formularios</h1>
+                <form action="http://tec.com/servidor.php" method="post">
+                    <fieldset>
+                        <legend>Datos de Usuario</legend>
+                        <label for="nombre">Nombre</label>
+                        <input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre" required autofocus />
+                        <br />
+                        <label for="apellidos">Apellido</label>
+                        <input name="apellidos" id="apellidos" type="text" placeholder="Primer Apellido" />
+                        <br />
+                        <label for="edad">Edad</label>
+                        <input name="edad" id="edad" type="number"/>
+                        <br />
+                        <label for="clave">Contraseña</label>
+                        <input name="clave" id="clave" type="password" />
+                        <br />
+                        <label for="mail">Email</label>
+                        <input name="mail" id="mail" type="email"/>
+                        <input type="hidden" name="sitio" value="oculto"/>
+                        <br />
+
+                        <textarea name="comentarios" id="comentarios">Agrega comentarios a nuestro formulario.</textarea>
+                        <br />
+                        <button type="submit">Enviar con button <i class="fa fa-briefcase"></i></button>
+                         
+                        <input type="reset" value="Borrar"/>
+                    </fieldset>
+                </form>
+        </section>
+        <section>
+            <article>
+                <h2>Iframes</h2>
+                <iframe id="la_nacion" src="http://www.nacion.com/"></iframe>
+            </article>
+        </section>
+        <section>
+            <h1>Tabla y estructuras complejas</h1>
+            <article>
+                    <h2>Tablas</h2>
+                    <table>
+                        <thead>
+                            <tr><th>Cabecero 1</th>
+                                <th>Cabecero 2</th>
+                                <th>Cabecero 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="col1">Elemento 11</td>
+                                <td class="col2">Elemento 12</td>
+                                <td class="col3">Elemento 13</td>
+                            </tr>
+                            <tr><td>elem. 21</td>
+                                <td>elem. 22</td>
+                                <td>elem. 23</td>
+                            </tr>
+                            <tr><td>elemento 31</td>
+                                <td>elemento 32</td>
+                                <td>elemento 33</td>
+                            </tr>
+                        <!--    agenda grupos de investigacion investigacion eventos y becas -->
+                        </tbody>
+                </table>
+            </article>
+        </section>
+        <section>
+            <ul>
+                <li><a href="http://www.google.com">Google</a></li>
+                <li><a href="http://www.w3c.org">W3C</a></li>
+                <li><a href="http://www.yahoo.com">Yahoo!</a></li>
+                <li><a href="http://translate.google.com">Google Translate</a></li>
+            </ul>
+        </section>
+    </body>
+</html>

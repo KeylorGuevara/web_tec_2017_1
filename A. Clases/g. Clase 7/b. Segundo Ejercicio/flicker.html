@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" rel="stylesheet"type="text/css">
+    </head>
+    <body>
+        <div id="tabs">
+            <ul>
+               <li> <a href="#">Búsqueda 1</a> </li>
+               <li> <a href="#">Búsqueda 2</a> </li>
+               <li> <a href="#">Búsqueda 3</a> </li>
+            </ul>
+                <div id="busqueda1">
+                    <input type="text" id="nombre">
+                    <input type="button" id="button" value="fotos">
+                    <br/>
+                    <div id="imagenes"></div>
+                </div>
+                <div id="busqueda2">
+                    <p>busqueda_2</p>
+                </div>
+        </div>
+                
+    </body>
+    <footer>
+        <!--Siempre poner de primero el jquery-->
+        <script src="jquery-3.2.0.min.js"></script>
+        <!--luego van estos -->
+        <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+
+                var x=["carro","casa","moto","Juegos"];
+
+                $("#nombre").autocomplete({
+                    source:x
+                });
+
+                $("#tabs").tabs({
+                    event:"mouseover"
+                });
+
+                $("#button").click(function(){
+                    var busqueda= $("#nombre").val();
+                $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?&format=json&jsoncallback=?",
+                {
+                    tags:busqueda,
+                    tagmode:"any",
+                    format:"json"
+                },function(data){
+                    //esto es un foreche
+                        $.each(data.items,function(i,items)
+                        {
+                            $('<img/>').attr("src",items.media.m).appendTo("#imagenes");
+                            if(i==3) return false;
+                        }
+                    )});
+                });
+            });
+        </script>
+            
+    </footer>
+</html>

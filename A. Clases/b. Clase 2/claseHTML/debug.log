@@ -1,0 +1,4 @@
+[0227/151402.331:ERROR:file_io.cc(30)] read: expected 448, observed 0
+[0227/151402.334:ERROR:crash_report_database_win.cc(443)] failed to read records
+[0227/151753.332:ERROR:file_io.cc(30)] read: expected 448, observed 0
+[0227/151753.333:ERROR:crash_report_database_win.cc(443)] failed to read records

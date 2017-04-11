@@ -1,0 +1,56 @@
+html {
+    background: #e6e9e9;
+    align-content: center;
+    background-image: linear-gradient(27deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased ;
+}
+
+
+p {
+    background-color:#bca; 
+    width:230px; 
+    border:1px solid green;
+} 
+
+div{
+    width:1000px;
+    height:100px; 
+}
+ 
+a {
+    position: relative;
+}
+
+.titulo_principal{
+	color: #222";
+	font-size: 22 px;
+	font-family: Sansita,
+	Arial, tahoma, Georgia, sans-serif;
+}
+
+.titulo_4{
+    font-family: Sansita
+}
+
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width:750px;
+    padding: 2em 2em 4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
